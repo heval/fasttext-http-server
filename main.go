@@ -20,7 +20,8 @@ type Data struct {
 	Value string `json:"data"`
 }
 
-func main() {modelPath := flag.String("model", "", "")
+func main() {
+	modelPath := flag.String("model", "", "")
 
 	flag.Parse()
 
