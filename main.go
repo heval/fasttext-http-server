@@ -9,7 +9,6 @@ import (
 	"encoding/json"
 	"flag"
 	"os"
-	"fmt"
 )
 
 type Prediction struct {
@@ -26,7 +25,7 @@ func main() {
 	flag.Parse()
 
 	if len(os.Args) < 2 {
-		fmt.Println("Please type a model path")
+		println("Please type a model path")
 		os.Exit(1)
 	}
 
